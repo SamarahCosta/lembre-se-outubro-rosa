@@ -5,7 +5,7 @@ import csv
 def ler(caminho_csv):
     mensagens = [] 
     
-    with open(caminho_csv, newline='', encoding='utf-8') as arquivo:
+    with open(caminho_csv, newline='', encoding='latin-1') as arquivo:
         
         #Lendo como dicionario
         leitor = csv.DictReader(arquivo)
