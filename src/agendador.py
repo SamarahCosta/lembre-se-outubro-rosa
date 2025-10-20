@@ -7,7 +7,7 @@ from utilitario import ler
 from envio import enviar_email
 
 # Caminho do arquivo de mensagens
-mensagens = ler("Caminho/completo/para/o/arquivo/mensagens.txt")
+mensagens = ler("../data/mensagens.csv")
 
 def executar():
 
@@ -33,9 +33,9 @@ def executar():
     enviar_email(
         mensagem=msg,
         assunto="Lembre-se, Outubro Rosa 🎀",
-        remetente="email@quemVaiEnviar.com",
-        senha="senhaGeradaNoPassoAcima",
-        destinatario="email@quemVaiReceber.com"
+        remetente="email@QuemVaiEnviar",
+        senha="suaSenhaGeradaNoPassooAcima",
+        destinatario="email@QuemVaiReceber"
     )
 
 # Agendamento diário às 10h (apenas uma vez por dia)
